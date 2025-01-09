@@ -1,30 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Render Sides
 
-## Getting Started
+This repository aims to provide a simple analysis of how and when different parts of a Next.js app do their thing. By checking out logs and runtime behavior, this simple research sheds light on how Next.js handles rendering on various technique both in App and Pages router.
 
-First, run the development server:
+> **_Rendering converts the code you write into user interfaces_**[^1]. ....
 
-```bash
-pnpm dev
-```
+This repository is here to give you a better understand the render behaviors of Next.js Next.js and help you build and optimize Next.js based apps to run smoother and faster.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Please visit this repository in [Code Sandbox](https://codesandbox.io/p/github/sensasi-delight/nextjs-render-sides) to getting started.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's The Problem?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js is awesome because it gives you a lot of flexibility with rendering methods, but let's be real—figuring out when and how things run can be a headache. Whether it's SSR, SSG, or CSR, the flow isn't always clear, which can make optimizing performance and debugging tricky. This simple research aims to clear the fog by breaking down what happens under the hood, so you can make smarter choices and avoid unnecessary guesswork.
 
-## Learn More
+## Methodology
 
-To learn more about Next.js, take a look at the following resources:
+Logs were recorded across various files within a Next.js application during execution to analyze and understand the sequence of rendering processes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[^1]: [Building Your Application: Rendering | Next.js](https://github.com/vercel/next.js/blob/8ffa6c74b1f3fe357ce25bb455a565c6327dbd1e/docs/01-app/03-building-your-application/03-rendering/index.mdx). (mdx file on GitHub)

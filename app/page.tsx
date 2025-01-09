@@ -2,17 +2,16 @@ export default function Home() {
 	return (
 		<main>
 			<h1>Next.js Render Sides</h1>
-			<p>
-				This repository helps you to understand the various render behaviors in
-				Nextjs App and Pages router.
-			</p>
+
 			<blockquote>
 				Rendering converts the code you write into user interfaces
 				<a href="#footnote-1">[1]</a>.
 			</blockquote>
+
 			<h2>
 				Request-Response Lifecycle<a href="#footnote-1">[1]</a>
 			</h2>
+
 			<ul>
 				<li>User Action</li>
 				<li>HTTP Request</li>
@@ -25,6 +24,7 @@ export default function Home() {
 			</ul>
 
 			<p>References:</p>
+
 			<ol
 				style={{
 					listStyle: "none",
